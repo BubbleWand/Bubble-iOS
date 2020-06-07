@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+// testing
 class OnboardingView: UIView {
     
     var isLastPage: Bool!
