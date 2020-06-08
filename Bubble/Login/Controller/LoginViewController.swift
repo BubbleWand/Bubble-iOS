@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 0
+        stackView.spacing = 3
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillProportionally
         return stackView
@@ -92,7 +92,17 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    
+    let signUpButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Sign Up", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+//        passwordTextField.font = K.normalFont
+        button.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        button.layer.cornerRadius = 10
+        button.layer.masksToBounds = true
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,7 +120,6 @@ class LoginViewController: UIViewController {
         self.view.backgroundColor = UIColor(red:0.49, green:0.84, blue:0.87, alpha:1.0)
         
         stackView.addArrangedSubview(titleLabel)
-        
         titleLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
         titleLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
         
@@ -118,7 +127,6 @@ class LoginViewController: UIViewController {
         logoImageView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
         
         stackView.addArrangedSubview(usernameTextField)
-        
         usernameTextField.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
         usernameTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
@@ -127,15 +135,22 @@ class LoginViewController: UIViewController {
         passwordTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         stackView.addArrangedSubview(loginButton)
-        
         loginButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        
+        stackView.addArrangedSubview(signUpButton)
+        signUpButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
+        signUpButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
     
     @objc func loginButtonTapped(){
         print("login tapped")
+    }
+    
+    @objc func signUpButtonTapped(){
+        print("sign up tapped")
     }
     
 }
