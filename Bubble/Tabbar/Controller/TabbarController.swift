@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  TabbarViewController.swift
 //  Bubble
 //
 //  Created by Jessica Trinh on 6/4/20.
@@ -8,13 +8,14 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-class HomeViewController: UIViewController {
+class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .blue
     }
     
 }
+
+

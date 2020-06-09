@@ -10,8 +10,13 @@
 		7354CF252488DD770065937D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF242488DD770065937D /* SignUpViewController.swift */; };
 		7354CF272488DDAF0065937D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF262488DDAF0065937D /* LoginViewController.swift */; };
 		7354CF2B2488DE100065937D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF2A2488DE100065937D /* HomeViewController.swift */; };
-		7354CF382488E43B0065937D /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF372488E43B0065937D /* TabbarViewController.swift */; };
+		7354CF382488E43B0065937D /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF372488E43B0065937D /* TabbarController.swift */; };
 		73556DCA248D861D00DF3287 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73556DC9248D861D00DF3287 /* Constants.swift */; };
+		73889000248FF98A005B063B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73888FFF248FF98A005B063B /* MapViewController.swift */; };
+		73889007248FF9FA005B063B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73889006248FF9FA005B063B /* ChatViewController.swift */; };
+		7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388900C248FFA82005B063B /* ProfileViewController.swift */; };
+		738890152490042B005B063B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738890142490042B005B063B /* NotificationViewController.swift */; };
+		7388901724900476005B063B /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388901624900476005B063B /* GroupsViewController.swift */; };
 		73E246EB2486C65E003569A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EA2486C65E003569A0 /* AppDelegate.swift */; };
 		73E246ED2486C65E003569A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EC2486C65E003569A0 /* SceneDelegate.swift */; };
 		73E246EF2486C65E003569A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EE2486C65E003569A0 /* ViewController.swift */; };
@@ -44,8 +49,13 @@
 		7354CF242488DD770065937D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7354CF262488DDAF0065937D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7354CF2A2488DE100065937D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7354CF372488E43B0065937D /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		7354CF372488E43B0065937D /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		73556DC9248D861D00DF3287 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		73888FFF248FF98A005B063B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		73889006248FF9FA005B063B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7388900C248FFA82005B063B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		738890142490042B005B063B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		7388901624900476005B063B /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		73E246E72486C65E003569A0 /* Bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E246EA2486C65E003569A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73E246EC2486C65E003569A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,12 +170,132 @@
 		7354CF352488E4180065937D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7354CF372488E43B0065937D /* TabbarViewController.swift */,
+				7354CF372488E43B0065937D /* TabbarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
 		7354CF362488E4210065937D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73888FFC248FF958005B063B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				73888FFE248FF977005B063B /* View */,
+				73888FFD248FF96E005B063B /* Controller */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		73888FFD248FF96E005B063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73888FFF248FF98A005B063B /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73888FFE248FF977005B063B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73889001248FF9BD005B063B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				73889005248FF9E5005B063B /* View */,
+				73889004248FF9DE005B063B /* Controller */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		73889004248FF9DE005B063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73889006248FF9FA005B063B /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73889005248FF9E5005B063B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73889008248FFA3F005B063B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7388900A248FFA68005B063B /* View */,
+				73889009248FFA5F005B063B /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		73889009248FFA5F005B063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7388900C248FFA82005B063B /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7388900A248FFA68005B063B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7388900E249002F8005B063B /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				7388901024900327005B063B /* View */,
+				7388900F24900319005B063B /* Controller */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		7388900F24900319005B063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7388901624900476005B063B /* GroupsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7388901024900327005B063B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		738890112490035B005B063B /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7388901324900371005B063B /* View */,
+				738890122490036B005B063B /* Controller */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		738890122490036B005B063B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				738890142490042B005B063B /* NotificationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7388901324900371005B063B /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -204,6 +334,11 @@
 				73E2472324872F73003569A0 /* SignUp */,
 				73E2472224872F52003569A0 /* Login */,
 				73E2472424872FD2003569A0 /* Home */,
+				7388900E249002F8005B063B /* Groups */,
+				73888FFC248FF958005B063B /* Map */,
+				738890112490035B005B063B /* Notification */,
+				73889008248FFA3F005B063B /* Profile */,
+				73889001248FF9BD005B063B /* Chat */,
 				7354CF342488E3FC0065937D /* Tabbar */,
 				7354CF332488E2B00065937D /* Managers */,
 				73E2471A2486CFAD003569A0 /* SupportFiles */,
@@ -420,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73889000248FF98A005B063B /* MapViewController.swift in Sources */,
 				7354CF272488DDAF0065937D /* LoginViewController.swift in Sources */,
 				7354CF252488DD770065937D /* SignUpViewController.swift in Sources */,
 				73E246EF2486C65E003569A0 /* ViewController.swift in Sources */,
@@ -429,7 +565,11 @@
 				73E246ED2486C65E003569A0 /* SceneDelegate.swift in Sources */,
 				73E247212486D3AF003569A0 /* OnboardingView.swift in Sources */,
 				73E2471F2486D378003569A0 /* OnboardingViewController.swift in Sources */,
-				7354CF382488E43B0065937D /* TabbarViewController.swift in Sources */,
+				738890152490042B005B063B /* NotificationViewController.swift in Sources */,
+				7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */,
+				73889007248FF9FA005B063B /* ChatViewController.swift in Sources */,
+				7354CF382488E43B0065937D /* TabbarController.swift in Sources */,
+				7388901724900476005B063B /* GroupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
