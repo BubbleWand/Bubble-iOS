@@ -147,10 +147,10 @@ class LoginViewController: UIViewController {
     
     @objc func loginButtonTapped(){
         print("login tapped")
-//        let tabBarVC: TabBarController = TabBarController()
-//        self.navigationController?.pushViewController(tabBarVC, animated: true)
-        let nextVC: HomeViewController = HomeViewController()
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        let tabBarVC: TabBarController = TabBarController()
+        self.navigationController?.pushViewController(tabBarVC, animated: true)
+//        let nextVC: HomeViewController = HomeViewController()
+//        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     @objc func signUpButtonTapped(){
