@@ -37,16 +37,16 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         
         let GroupsVC = GroupsViewController()
         let navController2 = UINavigationController(rootViewController: GroupsVC)
-        GroupsVC.tabBarItem = UITabBarItem(title: "Bubbles", image: UIImage(named: "tab-profile"), tag: 1)
+        GroupsVC.tabBarItem = UITabBarItem(title: "Bubbles", image: UIImage(named: "circle"), tag: 1)
         
         let MapVC = MapViewController()
         let navController3 = UINavigationController(rootViewController: MapVC)
-        MapVC.tabBarItem = UITabBarItem(title: "Map", image: UIImage(named: "tab-profile"), tag: 2)
+        MapVC.tabBarItem = UITabBarItem(title: "Map", image: UIImage(named: "tab-radar"), tag: 2)
         
         
         let NotificationVC = NotificationViewController()
         let navController4 = UINavigationController(rootViewController: NotificationVC)
-        navController4.tabBarItem = UITabBarItem(title: "Notification Center", image: UIImage(named: "tab-more"), tag: 3)
+        navController4.tabBarItem = UITabBarItem(title: "Notification Center", image: UIImage(named: "tab-notification"), tag: 3)
         
         let ProfileVC = ProfileViewController()
         let navController5 = UINavigationController(rootViewController: ProfileVC)
