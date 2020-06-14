@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
         return title
     }()
     
+    
 //    let usernameTextField: UITextField = {
 //        let usernameTextField = UITextField()
 //        let bottomLine = UIView()
@@ -93,7 +94,16 @@ class LoginViewController: UIViewController {
     }()
     
     let loginButton: UIButton = {
+        let bottomLine = UIView()
         let button = UIButton()
+        
+        bottomLine.translatesAutoresizingMaskIntoConstraints = false
+//        bottomLine.topAnchor.constraint(equalTo: button.bottomAnchor, constant: -8).isActive = true
+//        bottomLine.leadingAnchor.constraint(equalTo: button.leadingAnchor).isActive = true
+//        bottomLine.trailingAnchor.constraint(equalTo: button.trailingAnchor).isActive = true
+//        bottomLine.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+        
+        
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -140,22 +150,24 @@ class LoginViewController: UIViewController {
         createAccountButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         createAccountButton.addTarget(self, action: #selector(createAccountButtonTapped), for: .touchUpInside)
         
-//        stackView.addArrangedSubview(signUpButton)
-//        signUpButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-//        signUpButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-//        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+        stackView.addArrangedSubview(loginButton)
+//        loginButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
+//        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
     @objc func createAccountButtonTapped(){
         print("login tapped")
-        let tabBarVC: TabBarController = TabBarController()
-        self.navigationController?.pushViewController(tabBarVC, animated: true)
+        let signUpVC: SignUpViewController = SignUpViewController()
+        self.navigationController?.pushViewController(signUpVC, animated: true)
 //        let nextVC: HomeViewController = HomeViewController()
 //        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    @objc func signUpButtonTapped(){
+    @objc func loginButtonTapped(){
         print("sign up tapped")
+        let tabBarVC: TabBarController = TabBarController()
+        self.navigationController?.pushViewController(tabBarVC, animated: true)
     }
     
 }
