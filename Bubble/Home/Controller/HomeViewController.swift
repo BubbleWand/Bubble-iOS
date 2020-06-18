@@ -43,12 +43,15 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PhotoFeedCell
-        cell.photoImage = UIImageView(image: (UIImage(named: "\(images[indexPath.row])")))
+        cell.backgroundView = UIImageView(image: (UIImage(named: "\(images[indexPath.row])")))
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        let currentImage = UIImageView(image: (UIImage(named: "\(images[indexPath.row])")))
+//        let imageCrop = currentImage.getCropRatio()
+//        return tableView.frame.width / imageCrop
+        return tableView.frame.width
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -57,4 +60,12 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         self.navigationController?.pushViewController(nextView, animated: true)
     }
     
+}
+
+
+extension UIImage {
+    func getCropRatio() -> CGFloat {
+        let widthRatio = CGFloat(self.size.width / self.size.height)
+        return widthRatio
+    }
 }
