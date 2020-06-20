@@ -56,16 +56,16 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected item in row \(indexPath.row)")
-        let nextView: GroupsViewController = GroupsViewController()
+        let nextView: GroupsListViewController = GroupsListViewController()
         self.navigationController?.pushViewController(nextView, animated: true)
     }
     
 }
 
 
-extension UIImage {
-    func getCropRatio() -> CGFloat {
-        let widthRatio = CGFloat(self.size.width / self.size.height)
-        return widthRatio
-    }
-}
+//extension UIImage {
+//    func getCropRatio() -> CGFloat {
+//        let widthRatio = CGFloat(self.size.width / self.size.height)
+//        return widthRatio
+//    }
+//}

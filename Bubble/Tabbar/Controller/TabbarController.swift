@@ -35,7 +35,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "tab-home"), tag: 0)
         
         
-        let GroupsVC = GroupsViewController()
+        let GroupsVC = GroupsListViewController()
         let navController2 = UINavigationController(rootViewController: GroupsVC)
         GroupsVC.tabBarItem = UITabBarItem(title: "Bubbles", image: UIImage(named: "circle"), tag: 1)
         

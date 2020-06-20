@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732DCD73249D2A890050EBD8 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DCD72249D2A890050EBD8 /* Group.swift */; };
 		733C6D26249B47E900B77425 /* PhotoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733C6D25249B47E900B77425 /* PhotoFeedCell.swift */; };
+		7349DF3E249BE259007670BF /* GroupsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349DF3D249BE259007670BF /* GroupsTableCell.swift */; };
+		7349DF40249BE547007670BF /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7349DF3F249BE547007670BF /* GroupInfoViewController.swift */; };
 		7354CF252488DD770065937D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF242488DD770065937D /* SignUpViewController.swift */; };
 		7354CF272488DDAF0065937D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF262488DDAF0065937D /* LoginViewController.swift */; };
 		7354CF2B2488DE100065937D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF2A2488DE100065937D /* HomeViewController.swift */; };
@@ -17,7 +20,7 @@
 		73889007248FF9FA005B063B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73889006248FF9FA005B063B /* ChatViewController.swift */; };
 		7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388900C248FFA82005B063B /* ProfileViewController.swift */; };
 		738890152490042B005B063B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738890142490042B005B063B /* NotificationViewController.swift */; };
-		7388901724900476005B063B /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388901624900476005B063B /* GroupsViewController.swift */; };
+		7388901724900476005B063B /* GroupsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388901624900476005B063B /* GroupsListViewController.swift */; };
 		73E246EB2486C65E003569A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EA2486C65E003569A0 /* AppDelegate.swift */; };
 		73E246ED2486C65E003569A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EC2486C65E003569A0 /* SceneDelegate.swift */; };
 		73E246EF2486C65E003569A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E246EE2486C65E003569A0 /* ViewController.swift */; };
@@ -47,7 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732DCD72249D2A890050EBD8 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		733C6D25249B47E900B77425 /* PhotoFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedCell.swift; sourceTree = "<group>"; };
+		7349DF3D249BE259007670BF /* GroupsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableCell.swift; sourceTree = "<group>"; };
+		7349DF3F249BE547007670BF /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
 		7354CF242488DD770065937D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7354CF262488DDAF0065937D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7354CF2A2488DE100065937D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +63,7 @@
 		73889006248FF9FA005B063B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7388900C248FFA82005B063B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		738890142490042B005B063B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		7388901624900476005B063B /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		7388901624900476005B063B /* GroupsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsListViewController.swift; sourceTree = "<group>"; };
 		73E246E72486C65E003569A0 /* Bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E246EA2486C65E003569A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73E246EC2486C65E003569A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				73556DC9248D861D00DF3287 /* Constants.swift */,
+				732DCD72249D2A890050EBD8 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,7 +276,8 @@
 		7388900F24900319005B063B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7388901624900476005B063B /* GroupsViewController.swift */,
+				7388901624900476005B063B /* GroupsListViewController.swift */,
+				7349DF3F249BE547007670BF /* GroupInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 		7388901024900327005B063B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7349DF3D249BE259007670BF /* GroupsTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,14 +575,17 @@
 				73E246EB2486C65E003569A0 /* AppDelegate.swift in Sources */,
 				73556DCA248D861D00DF3287 /* Constants.swift in Sources */,
 				73E246ED2486C65E003569A0 /* SceneDelegate.swift in Sources */,
+				7349DF40249BE547007670BF /* GroupInfoViewController.swift in Sources */,
 				73E247212486D3AF003569A0 /* OnboardingView.swift in Sources */,
+				7349DF3E249BE259007670BF /* GroupsTableCell.swift in Sources */,
 				73E2471F2486D378003569A0 /* OnboardingViewController.swift in Sources */,
 				738890152490042B005B063B /* NotificationViewController.swift in Sources */,
+				732DCD73249D2A890050EBD8 /* Group.swift in Sources */,
 				7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */,
 				733C6D26249B47E900B77425 /* PhotoFeedCell.swift in Sources */,
 				73889007248FF9FA005B063B /* ChatViewController.swift in Sources */,
 				7354CF382488E43B0065937D /* TabbarController.swift in Sources */,
-				7388901724900476005B063B /* GroupsViewController.swift in Sources */,
+				7388901724900476005B063B /* GroupsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
