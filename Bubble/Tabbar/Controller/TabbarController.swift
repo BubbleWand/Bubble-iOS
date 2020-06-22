@@ -48,8 +48,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         let navController4 = UINavigationController(rootViewController: NotificationVC)
         navController4.tabBarItem = UITabBarItem(title: "Notification Center", image: UIImage(named: "tab-notification"), tag: 3)
         
-        let ProfileVC = ProfileViewController()
-        let navController5 = UINavigationController(rootViewController: ProfileVC)
+        let ProfileVC = ContentView()
+        let navController5 = UIHostingController(rootView: ProfileVC)
         navController5.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "tab-profile"), tag: 4)
         
         

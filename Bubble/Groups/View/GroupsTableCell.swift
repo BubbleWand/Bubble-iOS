@@ -6,80 +6,6 @@
 //  Copyright © 2020 Jessica Trinh. All rights reserved.
 //
 //
-//import Foundation
-//import UIKit
-//
-//class GroupsTableCell: UITableViewCell {
-//
-//    var groupImage: UIImageView = {
-//        var groupImage = UIImageView()
-//        groupImage.layer.masksToBounds = false
-//        groupImage.layer.borderColor = UIColor.white.cgColor
-//        groupImage.layer.cornerRadius = groupImage.frame.size.width / 2
-//        groupImage.clipsToBounds = true
-//        groupImage.translatesAutoresizingMaskIntoConstraints = false
-////        return groupImage
-//
-////        let image = UIImage(named: "imageName")
-//         groupImage.layer.borderWidth = 1.0
-//         groupImage.layer.masksToBounds = false
-//         groupImage.layer.borderColor = UIColor.white.cgColor
-//         groupImage.layer.cornerRadius =  groupImage.frame.size.width / 2
-//         groupImage.clipsToBounds = true
-//        return groupImage
-//    }()
-//
-//
-//    let title: UILabel = {
-//        let title = UILabel()
-//        title.lineBreakMode = NSLineBreakMode.byWordWrapping
-//        title.numberOfLines = 0
-//        title.adjustsFontSizeToFitWidth = true
-//        title.translatesAutoresizingMaskIntoConstraints = false
-//
-//        title.textColor = .black
-//        return title
-//    }()
-//
-//    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
-//        super.init(style: style, reuseIdentifier: reuseIdentifier)
-//
-//        contentView.addSubview(title)
-//        contentView.addSubview(groupImage)
-//        setUpImage()
-//        setUpTitle()
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
-////    func setUpImage() {
-////        groupImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-////        groupImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
-////        groupImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
-////        groupImage.widthAnchor.constraint(equalTo: groupImage.heightAnchor, multiplier: 16/9).isActive = true
-////    }
-//
-//    func setUpImage() {
-//        groupImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-//        groupImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
-////        groupImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
-////        groupImage.widthAnchor.constraint(equalTo: groupImage.heightAnchor, multiplier: 16/9).isActive = true
-//    }
-//
-//    func setUpTitle() {
-//        title.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-//        title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
-//        title.heightAnchor.constraint(equalToConstant: 80).isActive = true
-//    }
-//
-//    func setUpCellContents(group: Group2) {
-//        groupImage.image = group.image
-//        title.text = group.title
-//    }
-//
-//}
 
 import Foundation
 import UIKit
@@ -133,8 +59,6 @@ class GroupsTableCell: UITableViewCell{
         groupImage.image = group.image
         title.text = group.title
     }
-    
-
     
     
     required init?(coder: NSCoder) {

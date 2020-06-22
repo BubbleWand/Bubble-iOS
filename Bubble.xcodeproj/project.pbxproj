@@ -17,6 +17,9 @@
 		7354CF382488E43B0065937D /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354CF372488E43B0065937D /* TabbarController.swift */; };
 		73556DCA248D861D00DF3287 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73556DC9248D861D00DF3287 /* Constants.swift */; };
 		7362D9A424A04E1600272E1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362D9A324A04E1600272E1B /* ContentView.swift */; };
+		7362D9A624A055F400272E1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362D9A524A055F400272E1B /* MapView.swift */; };
+		7362D9A824A0564500272E1B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362D9A724A0564500272E1B /* CircleImage.swift */; };
+		7362D9AA24A05AC800272E1B /* GroupProfileImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362D9A924A05AC800272E1B /* GroupProfileImagesCell.swift */; };
 		73889000248FF98A005B063B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73888FFF248FF98A005B063B /* MapViewController.swift */; };
 		73889007248FF9FA005B063B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73889006248FF9FA005B063B /* ChatViewController.swift */; };
 		7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388900C248FFA82005B063B /* ProfileViewController.swift */; };
@@ -61,6 +64,9 @@
 		7354CF372488E43B0065937D /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		73556DC9248D861D00DF3287 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7362D9A324A04E1600272E1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7362D9A524A055F400272E1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7362D9A724A0564500272E1B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		7362D9A924A05AC800272E1B /* GroupProfileImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProfileImagesCell.swift; sourceTree = "<group>"; };
 		73888FFF248FF98A005B063B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		73889006248FF9FA005B063B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7388900C248FFA82005B063B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				7362D9A324A04E1600272E1B /* ContentView.swift */,
+				7362D9A524A055F400272E1B /* MapView.swift */,
+				7362D9A724A0564500272E1B /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				7349DF3D249BE259007670BF /* GroupsTableCell.swift */,
+				7362D9A924A05AC800272E1B /* GroupProfileImagesCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -577,6 +586,7 @@
 				7354CF2B2488DE100065937D /* HomeViewController.swift in Sources */,
 				73E246EB2486C65E003569A0 /* AppDelegate.swift in Sources */,
 				7362D9A424A04E1600272E1B /* ContentView.swift in Sources */,
+				7362D9A624A055F400272E1B /* MapView.swift in Sources */,
 				73556DCA248D861D00DF3287 /* Constants.swift in Sources */,
 				73E246ED2486C65E003569A0 /* SceneDelegate.swift in Sources */,
 				7349DF40249BE547007670BF /* GroupInfoViewController.swift in Sources */,
@@ -584,10 +594,12 @@
 				7349DF3E249BE259007670BF /* GroupsTableCell.swift in Sources */,
 				73E2471F2486D378003569A0 /* OnboardingViewController.swift in Sources */,
 				738890152490042B005B063B /* NotificationViewController.swift in Sources */,
+				7362D9AA24A05AC800272E1B /* GroupProfileImagesCell.swift in Sources */,
 				732DCD73249D2A890050EBD8 /* Group.swift in Sources */,
 				7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */,
 				733C6D26249B47E900B77425 /* PhotoFeedCell.swift in Sources */,
 				73889007248FF9FA005B063B /* ChatViewController.swift in Sources */,
+				7362D9A824A0564500272E1B /* CircleImage.swift in Sources */,
 				7354CF382488E43B0065937D /* TabbarController.swift in Sources */,
 				7388901724900476005B063B /* GroupsListViewController.swift in Sources */,
 			);
