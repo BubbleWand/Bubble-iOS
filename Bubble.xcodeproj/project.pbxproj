@@ -34,6 +34,8 @@
 		73E2470D2486C65F003569A0 /* BubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2470C2486C65F003569A0 /* BubbleUITests.swift */; };
 		73E2471F2486D378003569A0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2471E2486D378003569A0 /* OnboardingViewController.swift */; };
 		73E247212486D3AF003569A0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E247202486D3AF003569A0 /* OnboardingView.swift */; };
+		73E4A63E24A3F63E00CDCC25 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A63D24A3F63E00CDCC25 /* NotificationCell.swift */; };
+		73E4A64024A3F70B00CDCC25 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A63F24A3F70B00CDCC25 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		73E2470E2486C65F003569A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E2471E2486D378003569A0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		73E247202486D3AF003569A0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		73E4A63D24A3F63E00CDCC25 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		73E4A63F24A3F70B00CDCC25 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 			children = (
 				73556DC9248D861D00DF3287 /* Constants.swift */,
 				732DCD72249D2A890050EBD8 /* Group.swift */,
+				73E4A63F24A3F70B00CDCC25 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 		7388901324900371005B063B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73E4A63D24A3F63E00CDCC25 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -595,6 +601,8 @@
 				73E2471F2486D378003569A0 /* OnboardingViewController.swift in Sources */,
 				738890152490042B005B063B /* NotificationViewController.swift in Sources */,
 				7362D9AA24A05AC800272E1B /* GroupProfileImagesCell.swift in Sources */,
+				73E4A64024A3F70B00CDCC25 /* Notification.swift in Sources */,
+				73E4A63E24A3F63E00CDCC25 /* NotificationCell.swift in Sources */,
 				732DCD73249D2A890050EBD8 /* Group.swift in Sources */,
 				7388900D248FFA82005B063B /* ProfileViewController.swift in Sources */,
 				733C6D26249B47E900B77425 /* PhotoFeedCell.swift in Sources */,

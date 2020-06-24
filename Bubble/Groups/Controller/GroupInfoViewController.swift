@@ -71,7 +71,7 @@ extension GroupInfoViewController: UICollectionViewDelegateFlowLayout, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: ( self.collectionView.frame.size.width - 60 ) / 3,height:( self.collectionView.frame.size.width - 60 ) / 3)
+        return CGSize(width: (self.collectionView.frame.size.width - 60 ) / 3, height:( self.collectionView.frame.size.width - 60 ) / 3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
